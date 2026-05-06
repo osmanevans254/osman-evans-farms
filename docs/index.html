@@ -3,68 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osman Evans Farms Ltd - Modern Agriculture in Nyahururu and Machakos. Launching 2027.">
     <title>Osman Evans Farms Ltd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
-        header { background: #2e7d32; color: white; padding: 2rem; text-align: center; }
-        .container { padding: 20px; max-width: 800px; margin: auto; }
-        .section { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-        h2 { color: #2e7d32; }
-        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .product-card { border: 1px solid #ddd; padding: 10px; border-radius: 8px; background: #f9f9f9; }
-        .contact-box { background: #e8f5e9; padding: 20px; border-radius: 8px; }
-        .btn { display: inline-block; background: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f4f7f4; }
+        .top-nav { background: #1b5e20; color: white; padding: 10px 20px; display: flex; justify-content: flex-end; gap: 20px; font-size: 0.9rem; }
+        .top-nav a { color: white; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .verified-badge { color: #1da1f2; font-size: 0.8rem; }
+        header { background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); color: white; padding: 3rem 2rem; text-align: center; }
+        .logo-icon { font-size: 3.5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .container { padding: 20px; max-width: 900px; margin: auto; }
+        .section { margin-bottom: 40px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { color: #2e7d32; border-left: 5px solid #2e7d32; padding-left: 15px; margin-top: 0; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .product-card { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; }
+        .faq-item { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .faq-question { font-weight: bold; color: #2e7d32; }
+        .q-form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; background: #f9f9f9; padding: 20px; border-radius: 8px; }
+        .q-form input, .q-form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+        .btn-submit { background: #2e7d32; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 5px; font-weight: bold; }
+        .contact-box { background: #e8f5e9; padding: 30px; border-radius: 12px; text-align: center; }
+        .btn { display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin: 10px; font-weight: bold; color: white; }
+        .btn-call { background: #2e7d32; }
+        .btn-whatsapp { background: #25d366; }
+        .price-notice { font-style: italic; color: #666; font-size: 0.9rem; margin-top: 10px; }
     </style>
 </head>
 <body>
 
+<nav class="top-nav">
+    <a href="https://www.facebook.com/OsmanEvans" target="_blank">
+        <i class="fab fa-facebook"></i> Osman Evans <i class="fas fa-check-circle verified-badge"></i>
+    </a>
+    <a href="https://www.instagram.com/OsmanEvans" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+</nav>
+
 <header>
+    <div class="logo-icon">☀️♾️</div>
     <h1>Osman Evans Farms Ltd</h1>
-    <p>Modern Agriculture | Poultry & Vegetables</p>
+    <p>Modern Agriculture | Nyahururu & Machakos</p>
 </header>
 
 <div class="container">
     <div class="section">
-        <h2>About Our Farm</h2>
-        <p>At Osman Evans Farms, we believe in the power of nature. Every seed we plant and every chicken we raise is a testament to our commitment to sustainable farming.
-
-Founded by the Evans Waiganjo (Osman)in 2027, our farm has flourished into a cornerstone of the community, providing fresh produce and poultry to local and Nationwide markets and families.
-
-With respect for the land and love for our animals, we practice ethical farming techniques that nurture the environment and enhance our products. .</p>
+        <h2>About Our 2027 Vision</h2>
+        <p>Founded by <strong>Evans Waiganjo (Osman)</strong>, we are building a legacy of sustainable, tech-driven farming. We are currently scaling operations for our official nationwide launch in 2027.</p>
     </div>
 
     <div class="section">
         <h2>Our Products</h2>
         <div class="product-grid">
             <div class="product-card">
-                <h3>Poultry</h3>
-                <p>We sell: 
-•Free range (kienyeji) chicken at every stage of production + their eggs
-• goose duck at all stages of production
-• Kiengei duck at all stages of production 
-                    .</p>
+                <h3>Poultry Unit</h3>
+                <ul>
+                    <li>Kienyeji Chicken (All stages)</li>
+                    <li>Goose & Ducks (All stages)</li>
+                    <li>Broilers & Layers</li>
+                    <li>Organic Free-range Eggs</li>
+                </ul>
             </div>
             <div class="product-card">
-                <h3>Vegetables</h3>
-                <p>We have mainly focused on cabbage onion and tomato production
-                    we also have a section for organic vegetable production.</p>
+                <h3>Vegetable Unit</h3>
+                <ul>
+                    <li>Grown F1 Cabbage</li>
+                    <li>Premium Onions & Tomatoes</li>
+                    <li>Specialized Organic Section</li>
+                </ul>
             </div>
+        </div>
+        <p class="price-notice">Prices will be announced when stock is ready and are subject to change based on market conditions.</p>
+    </div>
+
+    <div class="section">
+        <h2>Extension Services</h2>
+        <p>We provide professional agricultural consultancy to help you succeed:</p>
+        <ul>
+            <li>Poultry Management & Production</li>
+            <li>Dairy Farming Excellence</li>
+            <li>General Livestock Production & Extension</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <span class="faq-question">Do you deliver nationwide?</span>
+            <p>Yes, we supply poultry and fresh vegetables across Kenya from our hubs.</p>
+        </div>
+        
+        <div id="form-container">
+            <h3>Join the Stock Waiting List</h3>
+            <p>Be the first to know when our F1 Cabbage or Poultry is ready.</p>
+            <form class="q-form" id="questionForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Phone Number" required>
+                <textarea placeholder="Tell us what you are interested in (Poultry, Vegetables, or Extension Services)..." rows="3" required></textarea>
+                <button type="submit" class="btn-submit">Join Waiting List</button>
+            </form>
+        </div>
+
+        <div id="thankYouMessage" style="display: none; text-align: center; padding: 20px; background: #e8f5e9; border-radius: 8px; border: 1px solid #2e7d32;">
+            <h3 style="color: #2e7d32;">✅ Thank You!</h3>
+            <p>You have been added to the <strong>Osman Evans Farms Ltd</strong> waiting list. We will alert you via WhatsApp or SMS soon.</p>
         </div>
     </div>
 
     <div class="section">
-        <h2>Contact Us</h2>
+        <h2>Connect With Us</h2>
         <div class="contact-box">
-            <p><strong>Location:</strong> Nyahururu and Machakos, Kenya</p>
-            <p><strong>Phone:</strong> +254 (Tap to call below)</p>
-            <a href="tel:+254746588309" class="btn">Call Osman Evans</a>
+            <a href="tel:+254746588309" class="btn btn-call">📞 Call Osman Evans</a>
+            <a href="https://wa.me/254746588309" class="btn btn-whatsapp">💬 WhatsApp</a>
+            <p>Email: osmanevans254@gmail.com</p>
         </div>
     </div>
 </div>
 
-<footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #888;">
-    &copy; 2026 Osman Evans Farms Ltd. All Rights Reserved.
+<footer style="text-align: center; padding: 40px; font-size: 0.9rem; color: #666;">
+    &copy; 2027 Osman Evans Farms Ltd. All Rights Reserved.
 </footer>
 
+<script>
+    document.getElementById('questionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('form-container').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+    });
+</script>
+
 </body>
-</html>
+            </html>
+    
