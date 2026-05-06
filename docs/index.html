@@ -11,23 +11,21 @@
         .top-nav { background: #1b5e20; color: white; padding: 10px 20px; display: flex; justify-content: flex-end; gap: 20px; font-size: 0.9rem; }
         .top-nav a { color: white; text-decoration: none; display: flex; align-items: center; gap: 8px; }
         .verified-badge { color: #1da1f2; font-size: 0.8rem; }
-        header { background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); color: white; padding: 3rem 2rem; text-align: center; }
-        .logo-icon { font-size: 3.5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        header { background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%); color: white; padding: 2rem; text-align: center; }
+        .logo-img { max-width: 280px; width: 85%; height: auto; margin-bottom: 10px; border-radius: 10px; }
         .container { padding: 20px; max-width: 900px; margin: auto; }
         .section { margin-bottom: 40px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         h2 { color: #2e7d32; border-left: 5px solid #2e7d32; padding-left: 15px; margin-top: 0; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .product-card { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; }
-        .faq-item { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .faq-question { font-weight: bold; color: #2e7d32; }
         .q-form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; background: #f9f9f9; padding: 20px; border-radius: 8px; }
-        .q-form input, .q-form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+        .q-form input, .q-form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
         .btn-submit { background: #2e7d32; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 5px; font-weight: bold; }
         .contact-box { background: #e8f5e9; padding: 30px; border-radius: 12px; text-align: center; }
         .btn { display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin: 10px; font-weight: bold; color: white; }
         .btn-call { background: #2e7d32; }
         .btn-whatsapp { background: #25d366; }
-        .price-notice { font-style: italic; color: #666; font-size: 0.9rem; margin-top: 10px; }
+        .price-notice { font-style: italic; color: #666; font-size: 0.9rem; margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px; }
     </style>
 </head>
 <body>
@@ -42,7 +40,7 @@
 </nav>
 
 <header>
-    <div class="logo-icon">☀️♾️</div>
+    <img src="logo.png" alt="Osman Evans Farms Ltd Logo" class="logo-img">
     <h1>Osman Evans Farms Ltd</h1>
     <p>Modern Agriculture | Nyahururu & Machakos</p>
 </header>
@@ -74,7 +72,7 @@
                 </ul>
             </div>
         </div>
-        <p class="price-notice">Prices will be announced when stock is ready and are subject to change based on market conditions.</p>
+        <p class="price-notice"><strong>Notice:</strong> Prices will be announced when stock is ready and are subject to change based on market conditions.</p>
     </div>
 
     <div class="section">
@@ -88,26 +86,20 @@
     </div>
 
     <div class="section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <span class="faq-question">Do you deliver nationwide?</span>
-            <p>Yes, we supply poultry and fresh vegetables across Kenya from our hubs.</p>
-        </div>
-        
+        <h2>Stock Waiting List</h2>
         <div id="form-container">
-            <h3>Join the Stock Waiting List</h3>
-            <p>Be the first to know when our F1 Cabbage or Poultry is ready.</p>
-            <form class="q-form" id="questionForm">
+            <p>Be the first to know when our F1 Cabbage or Poultry is ready for market.</p>
+            <form class="q-form" id="waitingListForm">
                 <input type="text" placeholder="Your Name" required>
-                <input type="text" placeholder="Phone Number" required>
-                <textarea placeholder="Tell us what you are interested in (Poultry, Vegetables, or Extension Services)..." rows="3" required></textarea>
+                <input type="tel" placeholder="Phone Number (WhatsApp preferred)" required>
+                <textarea placeholder="Tell us what you are interested in..." rows="3" required></textarea>
                 <button type="submit" class="btn-submit">Join Waiting List</button>
             </form>
         </div>
 
         <div id="thankYouMessage" style="display: none; text-align: center; padding: 20px; background: #e8f5e9; border-radius: 8px; border: 1px solid #2e7d32;">
             <h3 style="color: #2e7d32;">✅ Thank You!</h3>
-            <p>You have been added to the <strong>Osman Evans Farms Ltd</strong> waiting list. We will alert you via WhatsApp or SMS soon.</p>
+            <p>Your details have been sent to <strong>Osman Evans Farms Ltd</strong>. We will alert you as soon as stock is ready.</p>
         </div>
     </div>
 
@@ -121,12 +113,12 @@
     </div>
 </div>
 
-<footer style="text-align: center; padding: 40px; font-size: 0.9rem; color: #666;">
+<footer style="text-align: center; padding: 40px; font-size: 0.9rem; color: #666; border-top: 1px solid #eee;">
     &copy; 2027 Osman Evans Farms Ltd. All Rights Reserved.
 </footer>
 
 <script>
-    document.getElementById('questionForm').addEventListener('submit', function(event) {
+    document.getElementById('waitingListForm').addEventListener('submit', function(event) {
         event.preventDefault();
         document.getElementById('form-container').style.display = 'none';
         document.getElementById('thankYouMessage').style.display = 'block';
@@ -134,5 +126,5 @@
 </script>
 
 </body>
-            </html>
+    </html>
     
