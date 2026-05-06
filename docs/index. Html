@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Evans Farms Ltd</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        header { background: #2e7d32; color: white; padding: 2rem; text-align: center; }
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+        .section { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        h2 { color: #2e7d32; }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .product-card { border: 1px solid #ddd; padding: 10px; border-radius: 8px; background: #f9f9f9; }
+        .contact-box { background: #e8f5e9; padding: 20px; border-radius: 8px; }
+        .btn { display: inline-block; background: #2e7d32; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Osman Evans Farms Ltd</h1>
+    <p>Modern Agriculture | Poultry & Vegetables</p>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>About Our Farm</h2>
+        <p>Located in Nyeri, we are dedicated to high-quality agricultural production, utilizing modern technology to provide the best produce for our community.</p>
+    </div>
+
+    <div class="section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Poultry</h3>
+                <p>Kienyeji chicken and fresh farm eggs.</p>
+            </div>
+            <div class="product-card">
+                <h3>Vegetables</h3>
+                <p>Fresh, organic seasonal vegetables grown with care.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p><strong>Location:</strong> Nyeri, Kenya</p>
+            <p><strong>Phone:</strong> +254 (Tap to call below)</p>
+            <a href="tel:+254XXXXXXXXX" class="btn">Call Osman Evans</a>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.8rem; color: #888;">
+    &copy; 2026 Osman Evans Farms Ltd. All Rights Reserved.
+</footer>
+
+</body>
+</html>
